@@ -1,0 +1,435 @@
+@font-face {
+    font-family: "EniTabReg";
+    src: url("https://enigaseluce.com/it_IT/static/font/enitabreg-webfont.woff");
+}
+
+*{
+    outline: none !important;
+}
+
+body, html{
+    font-family: "Product Sans", sans-serif !important;
+}
+
+.welcome{
+    font-size: 1.2em;
+    animation-name: toTop;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.175, 0.82, 0.165, 1);
+    top: 40vh;
+}
+
+.google{
+    background: radial-gradient(circle at 0% -100%, #ff6255 0%, #da1100 100%);
+    color: white;
+}
+
+.facebook{
+    background: radial-gradient(circle at 100% -100%, #899bc1 0%, #3b5998 100%);
+    color: white;
+}
+
+.login{
+    bottom: -20%;
+    width: 90%;
+    height: 15vh;
+    left: 5%;
+    background: white;
+    border-radius: 12px 12px 0 0;
+    animation-name: toTopLogin;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.175, 0.82, 0.165, 1);
+}
+
+.accedi{
+    animation-name: accedi;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.82, 0.165, 1);
+}
+
+@keyframes accedi{
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 30%;
+    }
+}
+
+input[type="button"],input[type="text"],input[type="password"]{
+    border: 0px;
+}
+
+input[type="text"], input[type="password"]{
+    letter-spacing: 1px;
+}
+
+.welcome p{
+    font-size: 1.8em;
+    letter-spacing: 4px;
+}
+
+@keyframes toTopLogin{
+    0%{
+        bottom: -20%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+
+@keyframes toTop{
+    0%{
+        top: 40vh;
+    }
+    100%{
+        top: 5vh;
+    }
+}
+
+.primary{
+    background: radial-gradient(circle at 0% 0%, #ffd62c 0%, #ff8c0c 100%);
+}
+
+.text-primary{
+    color: #ff8c0c !important;
+}
+
+.splashscreen{
+    top: 10vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: none;
+    background:radial-gradient(circle at 0% 0%, #ffe175 0%,#ffda57 20%, #ffc341 40%, #ff9b1f 60%, #ff930c 80%, #ff8c0c 100%);
+}
+
+.headerShow{
+    background:radial-gradient(circle at 0% 0%, #ffda57 0%, #ff9b1f 50%, #ff8c0c 100%);
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-name: header;  
+}
+
+.splashscreen span{
+    font-size: 1.5em;
+}
+
+.login span{
+    font-size: 1em;
+}
+
+.subtitled{
+    text-decoration: underline;
+}
+
+.register span{
+    font-size: 1em;
+}
+
+.register{
+    font-size: 1em !important;
+}
+
+.m30vh{
+    margin-top: 30vh;
+}
+
+.m40vh{
+    margin-top: 40vh;    
+}
+
+header{
+    height: 30vh;
+}
+
+.progress{
+    height: 16px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.title{
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+
+.progress-bar{
+    background: #fff;
+    height: 14px;
+    width: 0;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+
+.mobility{
+    background: url("../img/mondo-centro.png");
+    background-size: 120% 101% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.house{
+    background: url("../img/mondo-sotto.png");
+    background-size: 120% 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.card{
+    height: 64px;
+    width: 64px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.slogan{
+    font-size: 1.2em !important;
+    opacity: 0;
+    animation-name: opacityEffect;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityEffect{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.led, .heating{
+    background-size: 100% !important;
+    background-position: center center !important;
+}
+
+.heart{
+    background: url("../img/mondo-sopra.png");
+    background-size: cover !important;
+    background-position: center !important;
+    height: 160px;
+}
+
+@keyframes leftBackground{
+    0%{
+        background-position-x: -200%;
+    }
+    100%{
+        background-position-x: 20px;
+    }
+}
+
+@keyframes rightBackground{
+    0%{
+        background-position-x: 300%;
+    }
+    100%{
+        background-position-x: 90%;
+    }
+}
+
+.border-rad{
+    border-radius: 12px;
+}
+
+.desc{
+    margin-top: 30px;
+}
+
+.dialog{
+    height: 80vh;
+    top: 150vh;
+    width: 90%;
+    left: 5%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 12px;
+    opacity: .3;
+    transition-duration: 1s;
+}
+
+.dialog-effect-open{
+    animation-name: openDialog;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.dialog-effect-close{
+    animation-name: closeDialog;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes openDialog{
+    0%{
+        opacity: .3;
+        top: 150vh;
+    }
+    100%{
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+@keyframes closeDialog{
+    0%{
+        opacity: 1;
+        top: 10vh;
+    }
+    100%{
+        opacity: .3;
+        top: 150vh;
+    }
+}
+
+.close{
+    font-size: 2em !important;
+} 
+
+.tpd-content{
+    text-align: center;
+    font-size: 1em !important;
+    line-height: 1em;
+}
+
+.porco{
+    background: url("../img/porco.png");
+    background-size: cover !important;
+    background-position: center !important;
+    height: 200px;
+    animation-delay: 2.5s;
+    left: 20%;
+}
+
+.moneta{
+    background: url("../img/moneta.png");
+    background-size: 124px 116px !important;
+    background-position: 28px center !important;
+    background-repeat: no-repeat !important;
+    height: 80px;
+    position: absolute;
+    animation-delay: 2.5s;
+}
+
+.font-2em{
+    font-size: 2em;
+}
+
+.font-1-5em{
+    font-size: 1.5em;
+}
+
+.moneta-effect{
+    animation-delay: 0s;
+    animation-name: rimbalzo;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.dona{
+    font-size: 1.2em;
+}
+
+@keyframes rimbalzo{
+    0%{
+        top: 20px;
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        top: 4px;
+        animation-timing-function: linear;        
+    }
+    100%{
+        top: 20px;
+        animation-timing-function: ease-in-out;        
+    }
+}
+
+.porco-noLeft{
+    left: 0 !important;
+}
+
+.top50px{
+    top: 50px;
+}
+
+.mobility h2, .house h2, .heart h2{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.content{
+    max-height: 70vh;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.fa-bolt{
+    transform: rotate(15deg);
+}
+
+.coins{
+    font-size: 1.8em;
+}
+
+.volts{
+    font-size: 2em;
+}
+
+.fa{
+    width: auto;
+    height: auto;
+}
+
+input[type="text"],input[type="password"], input[type="number"]{
+    border: 0px;
+    background: transparent;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    outline: none;
+    color: rgb(126, 126, 126);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(126, 126, 126);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(126, 126, 126);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgb(126, 126, 126);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgb(126, 126, 126);
+  }
+
+.bottom{
+    bottom: 0;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+.top{
+    top: 0;
+}
